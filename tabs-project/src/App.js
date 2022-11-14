@@ -41,6 +41,7 @@ function App() {
                 onClick={() => {
                   setValue(index);
                 }}
+                className={`job-btn ${index === value && "active-btn"}`}
               >
                 {item.company}
               </button>
@@ -61,6 +62,7 @@ function App() {
           })}
         </article>
       </div>
+      <button className="info-btn">more info</button>
     </section>
   );
 }
